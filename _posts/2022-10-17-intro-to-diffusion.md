@@ -236,7 +236,7 @@ To generate samples, DDPMs involve an iterative, possibly costly sampling proced
     
     Such process is no longer Markovian, since $x_t$ could depend on both $x_{t-1}, x_0$. The magnitude of $\sigma$ determines the stochasticity of the forward process.
     
-- **Reverse** **process:** the sampling distribution $p_\theta^{(t)}(x_{t-1}\mid x_t)$ leverages knowledge from $q_\sigma(x_{t-1} \mid x}_t, x_0)$; in order to sample $x_{t-1}$, $x_t$ and a prediction of $x_0$ are required:
+- **Reverse** **process:** the sampling distribution $p_\theta^{(t)}(x_{t-1}\mid x_t)$ leverages knowledge from $q_\sigma(x_{t-1} \mid x_t, x_0)$; in order to sample $x_{t-1}$, $x_t$ and a prediction of $x_0$ are required:
     
     $$
     f_{\theta}^{(t)}(x_{t}):=(x_{t}-\sqrt{1-\alpha_{t}}\cdot\epsilon_{\theta}^{(t)}(\alpha_{t}))/\sqrt{\alpha_{l}}
