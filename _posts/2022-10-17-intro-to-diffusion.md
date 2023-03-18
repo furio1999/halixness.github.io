@@ -72,7 +72,7 @@ This post aims to provide a broad and complete overview from the foundations to 
 
 ### Learning a data distribution: Metropolis-Hastings Markov Chains
 
-From literature, the building blocks for Diffusion consists in topics from statistics, stochastic optimization and machine learning. While we don’t know the [density](https://en.wikipedia.org/wiki/Probability_density_function) of a target data distribution the [Metropolis-Hastings algorithm](https://en.wikipedia.org/wiki/Metropolis_Hastings_algorithm) (MH) comes to help to generate samples approximating that distribution. Such samples are generated according to a *Markov Chain.*
+From literature, the building blocks for Diffusion consists in topics from statistics, stochastic optimization and machine learning. While we don’t know the [density](https://en.wikipedia.org/wiki/Probability_density_function) of a target data distribution the [Metropolis-Hastings algorithm](https://en.wikipedia.org/wiki/Metropolis%E2%80%93Hastings_algorithm) (MH) comes to help to generate samples approximating that distribution. Such samples are generated according to a *Markov Chain.*
 
 A **Markov chain** (MC) is a sequence of random variables $x_{t}$, where $x_{t} \rightarrow x_{t+1}$ according to a defined transition function. With MH, we can use MC to approximate the data distribution $p(x)$ by generating randomly [(Markov-chain Monte-Carlo)](https://en.wikipedia.org/wiki/Markov_chain_Monte_Carlo) some “acceptable” samples. 
 
